@@ -1,7 +1,7 @@
 ![logo](https://raw.githubusercontent.com/itmarsung/resource_images/master/framework/icon_mutipeer.png)
 # GGMutipeerKit  【[Chinese](https://github.com/itmarsung/GGMutipeerKit) | [English](https://github.com/itmarsung/GGMutipeerKit/blob/master/README_en.md) 】
 
-#### GGMutipeerKit是基于<MultipeerConnectivity>封装的小框架。支持函数式语法糖，让你的代码更简练。
+#### GGMutipeerKit是基于MultipeerConnectivity封装的小框架。支持函数式语法糖，让你的代码更简练。
 
 ## 1.安装
  
