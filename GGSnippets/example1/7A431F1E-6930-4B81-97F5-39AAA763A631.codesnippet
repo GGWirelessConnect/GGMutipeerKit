@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>GGMutipeer message code block1</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>// example 1
+    
+    GGMultipeer *session = [[GGMultipeer alloc] init];
+    // brower
+session.start(BrowerMode,&lt;#@"server"#&gt;,^(MCPeerID *peer, MCSessionState state,NSString *log) {
+        if (state == MCSessionStateConnected) {
+            session.message(&lt;#@"hello"#&gt;,&lt;#secs#&gt;,^(NSString *respondMessage,NSError *err) {
+                NSLog(@"server recieved message: %@ err:%@",respondMessage,err);
+            });
+        }
+    });
+
+    // advertiser
+session.start(AdvertiserMode,&lt;#@"client"#&gt;,^(MCPeerID *peer, MCSessionState state,NSString *log) {
+        if (state == MCSessionStateConnected) {
+            session.message(&lt;#@"world"#&gt;,&lt;#secs#&gt;,^(NSString *respondMessage,NSError *err) {
+                NSLog(@"client recieved message: %@ err:%@",respondMessage,err);
+            });
+        }
+    });</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>7A431F1E-6930-4B81-97F5-39AAA763A631</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>GGMutipeer 的函数式语法糖: start()-&gt;message()</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>GGMutipeer message</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>GGMutipeer message code block2</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string> // example 2
+    
+    GGMultipeer *session = [[GGMultipeer alloc] init];
+    // brower
+session.onceMessageForAutomator(BrowerMode,&lt;#@"server"#&gt;,&lt;#@"hello"#&gt;,&lt;#secs#&gt;,^(NSString *respondMsg,NSError *err){
+                   NSLog(@"server recieved message: %@ err:%@",respondMsg,err);
+    });
+
+    // advertiser
+session.onceMessageForAutomator(AdvertiserMode,&lt;#@"client"#&gt;,&lt;#@"world"#&gt;,&lt;#secs#&gt;,^(NSString *respondMsg,NSError *err){
+               NSLog(@"client recieved message: %@ err:%@",respondMsg,err);
+    });</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>E68AE900-64EE-440F-8936-CC7A5408F862</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>GGMutipeer message 单次自动发送信息方式</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>GGMutipeer message</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

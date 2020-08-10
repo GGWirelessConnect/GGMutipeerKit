@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>GGMutipeer message code block3</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>// example 3
+    GGMultipeer *session = [[GGMultipeer alloc] init];
+    // brower
+[session startBrowsingNearbyPeersToSessionWithDisplayName:&lt;#@"server"#&gt;];
+
+    @GGWeakObjc(session);
+    [session setConnectStateNotification:^(MCPeerID * _Nonnull peer, MCSessionState state, NSString * _Nonnull log) {
+        @GGStrongObjc(session);
+        if (state == MCSessionStateConnected) {
+            [session sendMessage:&lt;#@"hello"#&gt;];
+        }
+    }];
+    
+    [session setReceivedMessageNotification:^(id  _Nonnull message, MCPeerID * _Nonnull fromPeer) {
+        NSLog(@"server recieved message: %@",message);
+    }];
+   
+    // advertiser
+[session startBrowsingNearbyPeersToSessionWithDisplayName:&lt;#@"client"#&gt;];
+
+    [session setConnectStateNotification:^(MCPeerID * _Nonnull peer, MCSessionState state, NSString * _Nonnull log) {
+        @GGStrongObjc(session);
+        if (state == MCSessionStateConnected) {
+            [session sendMessage:&lt;#@"world"#&gt;];
+        }
+    }];
+    
+    [session setReceivedMessageNotification:^(id  _Nonnull message, MCPeerID * _Nonnull fromPeer) {
+        NSLog(@"client recieved message: %@",message);
+    }];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>DA082763-016F-4871-81A5-EE6177D8BBB2</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>传统方式：采用方法调用和block回调方式</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>GGMutipeer message</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
