@@ -21,6 +21,6 @@ Pod::Spec.new do |spec|
 
   spec.source       = { :git => "https://github.com/itmarsung/GGMutipeerKit.git", :tag => spec.version }
 
-  spec.source_files = 'framework/*.{h,m}'
+  spec.source_files = 'GGMutipeerKit/*.{h,m}'
 
 end
