@@ -1,7 +1,7 @@
 ![logo](https://raw.githubusercontent.com/itmarsung/resource_images/master/framework/icon_mutipeer.png)
 # GGMutipeerKit  【[Chinese](https://github.com/itmarsung/GGMutipeerKit) | [English](https://github.com/itmarsung/GGMutipeerKit/blob/master/README_en.md)】
 
-#### GGMutipeerKit is a small framework based on the <MultipeerConnectivity> package. Support functional syntactic sugar to make your code more concise.
+#### GGMutipeerKit is a small framework based on the MultipeerConnectivity package. Support functional syntactic sugar to make your code more concise.
 
 ## 1.Install
  
