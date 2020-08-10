@@ -13,7 +13,7 @@
  coming soon
  
  
- 当然你也可以下载[framework](https://github.com/itmarsung/GGMutipeerKit/tree/master/framework)文件直接导入的项目中。
+ 当然你也可以下载[framework](https://github.com/itmarsung/GGMutipeerKit/tree/master/GGMutipeerKit)文件直接导入的项目中。
 
 
 ## 2.怎样使用？
